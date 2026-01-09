@@ -2,7 +2,7 @@
 
 **AI-powered tax calculator designed for professional musicians**
 
-Simplifying complex tax scenarios for musicians juggling multiple income streams (gig income, royalties, expenses, PAYE income).
+Simplifying complex tax scenarios for musicians juggling multiple income streams and outgoings (gig income, royalties, expenses, PAYE income).
 
 ## Problem
 
