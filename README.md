@@ -10,6 +10,7 @@ Musicians often struggle to:
 
 - Track income from multiple sources (gigs, royalties, teaching, session work)
 - Understand tax deductions specific to the music industry
+- Work out valid expenses
 - File accurate tax returns without hiring expensive accountants
 
 ## Solution
