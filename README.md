@@ -7,6 +7,7 @@ Simplifying complex tax scenarios for musicians juggling multiple income streams
 ## Problem
 
 Musicians often struggle to:
+
 - Track income from multiple sources (gigs, royalties, teaching, session work)
 - Understand tax deductions specific to the music industry
 - File accurate tax returns without hiring expensive accountants
@@ -22,16 +23,19 @@ Tax-Conductor uses AI to help musicians understand their tax obligations and opt
 ## Tech Stack
 
 ### MVP (In Progress)
+
 - **Frontend:** React + TypeScript + Vite
 - **Database:** Supabase (PostgreSQL)
-- **AI Integration:** Claude API (planned)
+- **AI Integration:** Anthropic API (planned)
 
 ### Future (Planned)
+
 - **Backend:** Python (FastAPI) with OOP architecture
 - **Infrastructure:** AWS
 - **Search:** RAG with PgVector for intelligent tax rule retrieval
 
 ## Getting Started
+
 ```bash
 npm install
 npm run dev
