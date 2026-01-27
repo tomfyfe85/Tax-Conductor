@@ -1,1 +1,0 @@
--- Seed data for income_source table
