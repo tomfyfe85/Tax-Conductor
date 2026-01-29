@@ -23,27 +23,41 @@ Tax-Conductor uses AI to help musicians understand their tax obligations and opt
 
 ## Tech Stack
 
-### MVP (In Progress)
+| Component | Technology |
+|-----------|------------|
+| Core API | Django + Django REST Framework |
+| Streaming/AI endpoints | FastAPI |
+| Database | PostgreSQL + pgvector |
+| Caching/Message broker | Redis |
+| Background jobs | Celery |
+| Containers | Docker |
+| Deployment | AWS (ECS, RDS, S3) |
+| Frontend | React (later phases) |
 
-- **Frontend:** React + TypeScript + Vite
-- **Database:** Supabase (PostgreSQL)
-- **AI Integration:** Anthropic API (planned)
+## Current Status
 
-### Future (Planned)
-
-- **Backend:** Python (FastAPI) with OOP architecture
-- **Infrastructure:** AWS
-- **Search:** RAG with PgVector for intelligent tax rule retrieval
+**Phase 1:** Project setup & core models
+- Custom User model (email-based auth)
+- Transaction and Category models (next)
+## Getting Started
 
 ## Getting Started
 
 ```bash
-npm install
-npm run dev
+cd tax_conductor
+python -m venv venv
+source venv/bin/activate
+pip install django
+python manage.py migrate
+python manage.py runserver
 ```
 
-## Project Vision
+## Roadmap
+- Core Django models & API
+- Tax calculation engine
+- CSV streaming (FastAPI)
+- AI transaction classification
+- RAG system for tax advice
+- Docker & AWS deployment
+- React frontend
 
-Phase 1: MVP exploring how LLMs can simplify tax complexity for musicians
-
-Phase 2: Scale with proper backend, vector search for tax rules, and AWS deployment
