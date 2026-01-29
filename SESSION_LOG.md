@@ -11,8 +11,11 @@ Phase 1: Project Setup & Core Models
 - Added `users` to INSTALLED_APPS in settings.py
 - Added AUTH_USER_MODEL = 'users.User' in settings.py
 - Moved project guides to `project_guides/` folder
-- LinkedIn post drafted and ready to publish
-- **Next:** Run `python manage.py makemigrations` then `python manage.py migrate`
+- Ran first migrations (makemigrations + migrate)
+- Created superuser (test@test.com / Test_User)
+- Registered User model in admin.py
+- Added __str__ method to User model
+- **Next:** Set up Postgres via Docker, then build Transaction and Category models
 
 ## Decisions Made
 - Project name: `tax_conductor` (snake_case, Python convention)
@@ -51,4 +54,14 @@ Phase 1: Project Setup & Core Models
 - Discussed RAG/pgvector plans for Phase 8
 - Wrote first LinkedIn post about the project
 - Fixed accidental typo in Django's source code (AbstractUser → 6esaX)
-- **Stopped at:** Ready to run first migrations
+
+### Session 2 - 2026-01-29
+- Learned about migrations (makemigrations vs migrate)
+- Ran first migrations successfully
+- Created superuser with email-based login (test@test.com)
+- Registered User model in admin.py
+- Added __str__ method to User model for readability
+- Verified everything works in Django admin
+- Discussed SQLite vs Postgres — decided to set up Postgres via Docker
+- Wrote second LinkedIn post about migrations
+- **Stopped at:** Ready to set up Postgres with Docker, then build Transaction and Category models
