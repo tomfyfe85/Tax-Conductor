@@ -1,5 +1,11 @@
 # Session Log
 
+## Learning Approach
+This is an educational project. Tom (the user) wants to learn about all of this as it's built. He wants to write the code himself. Claude acts as a university lecturer — teaching, guiding, and explaining concepts along the way. Tom should be challenged by the process and learn at each step. Don't just give solutions; explain the "why" and let Tom do the work.
+
+## LinkedIn
+Tom should regularly post updates to LinkedIn documenting the learning journey.
+
 ## Current Phase
 Phase 1: Project Setup & Core Models
 
@@ -65,3 +71,14 @@ Phase 1: Project Setup & Core Models
 - Discussed SQLite vs Postgres — decided to set up Postgres via Docker
 - Wrote second LinkedIn post about migrations
 - **Stopped at:** Ready to set up Postgres with Docker, then build Transaction and Category models
+
+### Session 3 - 2026-02-03
+- Created docker-compose.yml with Postgres 15
+- Debugged port conflict: Homebrew postgresql@17 was blocking port 5432
+- Learned about `lsof -i :5432` to check what's using a port
+- Learned about `brew services stop postgresql@17` to stop conflicting service
+- Successfully connected Django to Docker Postgres
+- Ran migrations on fresh Postgres database
+- Learned about Docker volumes (data persistence) — to continue next session
+- **Stopped at:** Need to create superuser, then build Transaction and Category models
+- **Next session:** Discuss why you might skip volumes in early dev, then set up volume for Postgres
