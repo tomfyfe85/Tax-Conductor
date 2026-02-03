@@ -15,6 +15,14 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# from dotenv import load_dotenv
+# import os
+
+# load_dotenv()
+# POSTGRES_USER = os.getenv("POSTGRES_USER")
+# POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+# POSTGRES_DB = os.getenv("POSTGRES_DB")
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -76,8 +84,12 @@ WSGI_APPLICATION = 'tax_conductor.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tax_conductor_db',
+        'USER': 'postgres_tax_conductor',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': 5432
     }
 }
 
