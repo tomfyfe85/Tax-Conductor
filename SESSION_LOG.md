@@ -80,5 +80,15 @@ Phase 1: Project Setup & Core Models
 - Successfully connected Django to Docker Postgres
 - Ran migrations on fresh Postgres database
 - Learned about Docker volumes (data persistence) — to continue next session
-- **Stopped at:** Need to create superuser, then build Transaction and Category models
-- **Next session:** Discuss why you might skip volumes in early dev, then set up volume for Postgres
+
+### Session 4 - 2026-02-05
+- Refactored settings.py and docker-compose.yml to use .env file for credentials
+- Learned difference between docker start/stop/down/up and docker-compose
+- Created `transactions` app with Transaction and Category models
+- Learned about ForeignKey relationships (a model can have multiple FKs)
+- Learned about on_delete options: CASCADE vs PROTECT
+- Used PROTECT for category FK (prevents accidental data deletion)
+- Learned DecimalField needs max_digits/decimal_places, CharField needs max_length
+- Ran migrations and registered models in admin
+- **Stopped at:** Models complete and visible in admin
+- **Next session:** Add __str__ methods for readability, test creating data in admin, possibly start on API endpoints
