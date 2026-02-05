@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'tax_conductor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tax_conductor_db',
-        'USER': 'postgres_tax_conductor',
-        'PASSWORD': '123456',
+        'NAME': POSTGRES_DB,
+        'USER': POSTGRES_USER,
+        'PASSWORD': POSTGRES_PASSWORD,
         'HOST': 'localhost',
         'PORT': 5432
     }
