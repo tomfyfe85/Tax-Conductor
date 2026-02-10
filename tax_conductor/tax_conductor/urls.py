@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from transactions import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('transactions/', views.all_transactions, name='all transactions'),
 ]

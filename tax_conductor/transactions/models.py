@@ -8,7 +8,16 @@ class Transaction(models.Model):
     description = models.CharField(max_length=255)
     category = models.ForeignKey('Category', on_delete=models.PROTECT)
 
+    def __str__(self):
+        return f"Username: {self.user.username} | Amount: {self.amount} | Date/Time: {self.date} | Category: {self.category.name}"
+
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
     is_deductible = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return f"name: {self.name}"
+    
+    class Meta:
+        verbose_name_plural = "Categories"

@@ -91,4 +91,16 @@ Phase 1: Project Setup & Core Models
 - Learned DecimalField needs max_digits/decimal_places, CharField needs max_length
 - Ran migrations and registered models in admin
 - **Stopped at:** Models complete and visible in admin
-- **Next session:** Add __str__ methods for readability, test creating data in admin, possibly start on API endpoints
+
+### Session 5 - 2026-02-10
+- Added __str__ methods to Transaction and Category models
+- Added Meta class to Category for correct plural ("Categories" not "Categorys")
+- Created test data in admin (4 categories, 4 transactions)
+- Built first API endpoint with plain Django (no DRF) — GET /transactions/ returns JSON
+- Learned about views, URL patterns, and Django's request/response cycle
+- Learned why Django files can't be run directly (relative imports need Django's framework)
+- Learned difference between Python dict .values() and Django QuerySet .values() (polymorphism)
+- Decided to learn plain Django views before adding DRF — understand the manual work first
+- Learned what REST APIs are: HTTP methods (GET/POST/PUT/DELETE) returning JSON for code to consume
+- **Stopped at:** Working GET endpoint for all transactions
+- **Next session:** Install DRF, build serializers, compare to manual approach. Then add more endpoints (POST, single transaction, etc.)
