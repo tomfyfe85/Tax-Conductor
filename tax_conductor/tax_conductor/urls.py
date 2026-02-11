@@ -20,5 +20,6 @@ from transactions import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('transactions/', views.all_transactions, name='all transactions'),
+    path('transactions/', views.all_transactions, name='all_transactions'),
+    path("transactions/<int:pk>", views.transaction_by_id, name='transactions_by_id')
 ]

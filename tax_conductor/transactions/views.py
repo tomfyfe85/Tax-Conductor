@@ -1,10 +1,10 @@
-from django.shortcuts import render
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from .models import Transaction
 
 def all_transactions(request):
-    data = list(Transaction.objects.all().values())
-    return JsonResponse(data, safe=False)
+    transactions = list(Transaction.objects.all().values())
+    return JsonResponse(transactions, safe=False)
 
-
-
+def transaction_by_id(request, pk):
+    transaction = list(Transaction.objects.get(pk=pk).values())
+    return JsonResponse(transaction, safe=False)
